@@ -2,7 +2,7 @@
 
 Ce projet est un gestionnaire de tournois d'échecs développé en Python. Il permet de créer et gérer des joueurs, des tournois, et de suivre les résultats des matchs.
 
-## Fonctionnalités
+## Fonctionnalités :
 
 - Création et gestion de joueurs
 - Création et gestion de tournois
@@ -10,7 +10,7 @@ Ce projet est un gestionnaire de tournois d'échecs développé en Python. Il pe
 - Lancement et suivi des tournois
 - Génération de rapports sur les joueurs et les tournois
 
-## Installation
+## Installation :
 
 1. Clonez ce dépôt :
 git clone https://github.com/eva64290/Projet_P4.git
@@ -35,7 +35,7 @@ python3 -m venv env
 pip install -r requirements.txt (pip3 sur Mac)
 
 
-## Utilisation
+## Utilisation :
 
 Pour lancer le programme, exécutez :
 python3 main.py
@@ -43,7 +43,7 @@ python3 main.py
 
 Suivez les instructions à l'écran pour naviguer dans le menu et utiliser les différentes fonctionnalités.
 
-## Structure du Projet
+## Structure du Projet :
 
 - `main.py` : Point d'entrée du programme
 - `controllers/` : Contient les contrôleurs pour les joueurs et les tournois
@@ -51,7 +51,7 @@ Suivez les instructions à l'écran pour naviguer dans le menu et utiliser les d
 - `views/` : Contient la vue pour l'interface utilisateur
 - `data/` : Dossier où sont stockées les données (fichiers JSON)
 
-## Contribution
+## Contribution :
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
