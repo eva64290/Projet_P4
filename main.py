@@ -1,4 +1,4 @@
-import os
+    import os
 from controllers.main_controller import MainController
 from models.player import Player
 from models.tournament import Tournament
