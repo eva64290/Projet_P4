@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: controllers/tournament_controller.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="controllers.tournament_controller.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               controllers/tournament_controller.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  2
+               </span>
+               <strong>F401:</strong> 'models.round.Round' imported but unused
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'models.round.Round' imported but unused:</p>
+               
+               <a href="controllers.tournament_controller.source.html#l3">
+                  <tt><i>3</i> <span class="kn">from</span> <span class="nn">models.round</span> <span class="kn">import</span> <span class="n">Round</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'random' imported but unused:</p>
+               
+               <a href="controllers.tournament_controller.source.html#l6">
+                  <tt><i>6</i> <span class="kn">import</span> <span class="nn">random</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  14
+               </span>
+               <strong>E501:</strong> line too long (91 > 79 characters)
+               
+                  (and 8 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (91 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l13">
+                  <tt><i>13</i>         <span class="n">name</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="n">description</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">get_tournament_info</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (85 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l15">
+                  <tt><i>15</i>             <span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%m-%Y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (81 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l16">
+                  <tt><i>16</i>             <span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">end_date</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%m-%Y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (86 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l17">
+                  <tt><i>17</i>             <span class="n">tournament</span> <span class="o">=</span> <span class="n">Tournament</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (108 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l31">
+                  <tt><i>31</i>                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Joueur </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2"> ajouté au tournoi </span><span class="si">{</span><span class="n">tournament</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (87 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l45">
+                  <tt><i>45</i>             <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="n">Player</span><span class="o">.</span><span class="n">get_by_id</span><span class="p">(</span><span class="n">player_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">player_id</span> <span class="ow">in</span> <span class="n">tournament</span><span class="o">.</span><span class="n">players</span><span class="p">]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (85 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l61">
+                  <tt><i>61</i>         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le tournoi </span><span class="si">{</span><span class="n">tournament</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> va commencer avec </span><span class="si">{</span><span class="n">num_rounds</span><span class="si">}</span><span class="s2"> rondes.&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (98 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l67">
+                  <tt><i>67</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impossible de créer une nouvelle ronde. Le tournoi est peut-être terminé.&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (83 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l78">
+                  <tt><i>78</i>         <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="n">Player</span><span class="o">.</span><span class="n">get_by_id</span><span class="p">(</span><span class="n">player_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">player_id</span> <span class="ow">in</span> <span class="n">tournament</span><span class="o">.</span><span class="n">players</span><span class="p">]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (85 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l90">
+                  <tt><i>90</i>                     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Match: </span><span class="si">{</span><span class="n">players</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2"> vs </span><span class="si">{</span><span class="n">players</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (91 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l94">
+                  <tt><i>94</i>             <span class="n">unpaired_player</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">player</span> <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">players</span> <span class="k">if</span> <span class="n">player</span><span class="o">.</span><span class="n">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">paired</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l95">
+                  <tt><i>95</i>             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le joueur </span><span class="si">{</span><span class="n">unpaired_player</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2"> est exempté pour cette ronde.&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (83 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l116">
+                  <tt><i>116</i>         <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="n">Player</span><span class="o">.</span><span class="n">get_by_id</span><span class="p">(</span><span class="n">player_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">player_id</span> <span class="ow">in</span> <span class="n">tournament</span><span class="o">.</span><span class="n">players</span><span class="p">]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="controllers.tournament_controller.source.html#l120">
+                  <tt><i>120</i>             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2"> - Score: </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">score</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="controllers.tournament_controller.source.html#l8">
+                  <tt><i>8</i> <span class="k">class</span> <span class="nc">TournamentController</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
