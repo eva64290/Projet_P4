@@ -1,0 +1,25 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnement virtuel
+venv/
+.venv/
+env/
+.env/
+
+# Fichiers de base de données
+data/*.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.swp
+
+*
+
