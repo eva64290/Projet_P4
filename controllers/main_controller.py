@@ -1,4 +1,4 @@
-    from controllers.player_controller import PlayerController
+from controllers.player_controller import PlayerController
 from controllers.tournament_controller import TournamentController
 from views.menu_view import MenuView
 
