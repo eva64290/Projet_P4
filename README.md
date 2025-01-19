@@ -1,4 +1,4 @@
-# Gestionnaire de Tournois d'Échecs avec Openclassrooms 
+# Gestionnaire de Tournois d'Échecs avec Openclassrooms :
 
 Ce projet est un gestionnaire de tournois d'échecs développé en Python. Il permet de créer et gérer des joueurs, des tournois, et de suivre les résultats des matchs.
 
