@@ -1,4 +1,4 @@
-    class MenuView:
+class MenuView:
     def display_main_menu(self):
         print("\n--- Menu Principal ---")
         print("1. Créer un joueur")
